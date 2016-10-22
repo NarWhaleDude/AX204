@@ -1,0 +1,101 @@
+/* Menu */
+
+#coolMenu {
+  width: 560px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#coolMenu a {
+  padding: 10px 40px;
+  background: #ddd;
+  border-radius: 5%;
+  color: black;
+  border: 2px solid black;
+  font-family: arial;
+  text-decoration: none;
+}
+
+.menu {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin-left: -20px;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 1px 1px;
+  background: #ddd;
+  border-radius: 5%;
+  color: black;
+  border: 2px solid black;
+  font-family: arial;
+  text-decoration: none;
+}
+
+.menu li a {
+  display: block;
+  padding-top: 40px;
+  color: black;
+  width: 100px;
+  height: 60px;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial;
+  color: white;
+}
+
+
+
+/* Sections */
+
+#p1 {
+  color: #e8ff2f;
+}
+
+#p2 {
+  color: #ff5151;
+  text-align: center;
+}
+
+#p3 {
+  color: #001eff;
+  text-align: right;
+}
+
+#p4 {
+  text-align: center;
+  color: #d200b4;
+}
+
+#p5 {
+  color: #e8ff2f;
+}
+
+#p6 {
+  color: #ff5151;
+  text-align: center;
+}
+
+#p7 {
+  color: #001eff;
+  text-align: right;
+}
+
+#p8 {
+  color: #d200b4 ;
+}
+
+/* header */
+
+#TEO {
+  font-size: 150px;
+  text-align: center;
+  color: #e8ff2f;
+}
