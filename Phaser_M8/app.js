@@ -7,6 +7,7 @@ var score = 0;
 function preload(){
     game.load.image("sky", "assets/sky.png");
     game.load.image("ground", "assets/platform.png");
+    game.load.image("star", "assets/star.png");
 }
 
 function create(){
