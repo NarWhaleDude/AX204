@@ -8,7 +8,8 @@ function preload(){
     game.load.image("sky", "assets/sky.png");
     game.load.image("ground", "assets/platform.png");
     game.load.image("star", "assets/star.png");
-    game.load.sprite("dude", "assets/dude.png", 32, 48);
+    game.load.spritesheet("dude", "assets/dude.png", 32, 48);
+    game.load.spritesheet("baddie", "assets/baddie.png", )
 }
 
 function create(){
@@ -32,7 +33,34 @@ function create(){
 
     var ledge = platforms.create(-150, 250, "ground");
     ledge.body.immovable = true;
+
+    //Player
+    player = game.add.sprite(32, game.world.height - 150, "dude");
+    // animate sprite
+    player.animation.add("left", [0,1,2,3], 10, true);
+    player.animation.add("right", [5,6,7,8], 10, true);
+    game.physics.arcade.enable(player);
+    // specify the physics
+    player.body.bounce.y = 0.3;
+    player.body.gravity.y = 301;
+    player.body.colideWorldBounds = true;
+
+    //enemy
+  baddie1 = game.add.sprite(750, 20, "baddie");
+  //animate  the sprite
+  baddie1.animation.add("left", [0,1], 10, true);
+  baddie1.animation.add("right", [2,3], 10, true);
+  game.physics.arcade.enable(baddie1);
+  // specify the physics
+  baddie1.body.bounce.y = 0.3;
+  baddie1.body.gravity.y = 301;
+  baddie1.body.colideWorldBounds = true;
+
+  //Keyboard events
+  cursors = game.input.Keyboard.createCursorKeys();
 }
+
+
 
 function update(){
 
