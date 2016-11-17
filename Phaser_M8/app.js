@@ -9,7 +9,7 @@ function preload(){
     game.load.image("ground", "assets/platform.png");
     game.load.image("star", "assets/star.png");
     game.load.spritesheet("dude", "assets/dude.png", 32, 48);
-    game.load.spritesheet("baddie", "assets/baddie.png", )
+    game.load.spritesheet("baddie", "assets/baddie.png", 32, 32);
 }
 
 function create(){
@@ -35,7 +35,7 @@ function create(){
     ledge.body.immovable = true;
 
     //Player
-    player = game.add.sprite(32, game.world.height - 150, "dude");
+    var player = game.add.sprite(32, game.world.height - 150, "dude");
     // animate sprite
     player.animation.add("left", [0,1,2,3], 10, true);
     player.animation.add("right", [5,6,7,8], 10, true);
@@ -46,7 +46,7 @@ function create(){
     player.body.colideWorldBounds = true;
 
     //enemy
-  baddie1 = game.add.sprite(750, 20, "baddie");
+  var baddie1 = game.add.sprite(750, 20, "baddie");
   //animate  the sprite
   baddie1.animation.add("left", [0,1], 10, true);
   baddie1.animation.add("right", [2,3], 10, true);
