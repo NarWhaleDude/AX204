@@ -37,8 +37,8 @@ function create(){
     //Player
     player = game.add.sprite(32, game.world.height - 150, "dude");
     // animate sprite
-    player.animation.add("left", [0,1,2,3], 10, true);
-    player.animation.add("right", [5,6,7,8], 10, true);
+    player.animations.add("left", [0,1,2,3], 10, true);
+    player.animations.add("right", [5,6,7,8], 10, true);
     game.physics.arcade.enable(player);
     // specify the physics
     player.body.bounce.y = 0.3;
@@ -48,8 +48,8 @@ function create(){
     //enemy
   var baddie1 = game.add.sprite(750, 20, "baddie");
   //animate  the sprite
-  baddie1.animation.add("left", [0,1], 10, true);
-  baddie1.animation.add("right", [2,3], 10, true);
+  baddie1.animations.add("left", [0,1], 10, true);
+  baddie1.animations.add("right", [2,3], 10, true);
   game.physics.arcade.enable(baddie1);
   // specify the physics
   baddie1.body.bounce.y = 0.3;
