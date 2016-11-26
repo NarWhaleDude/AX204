@@ -43,7 +43,7 @@ function create(){
     // specify the physics
     player.body.bounce.y = 0.3;
     player.body.gravity.y = 301;
-    player.body.colideWorldBounds = true;
+    player.body.collideWorldBounds = true;
 
     //enemy
   var baddie1 = game.add.sprite(750, 20, "baddie");
@@ -54,7 +54,7 @@ function create(){
   // specify the physics
   baddie1.body.bounce.y = 0.3;
   baddie1.body.gravity.y = 301;
-  baddie1.body.colideWorldBounds = true;
+  baddie1.body.collideWorldBounds = true;
 
   //Keyboard events
   cursors = game.input.keyboard.createCursorKeys();
