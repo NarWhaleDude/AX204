@@ -1,4 +1,4 @@
-console.log("yay");
+console.log("TRUMP");
 
 // Declare the variables
 var game = new Phaser.Game(800, 600, Phaser.AUTO, '', {preload: preload, create: create, update: update});
@@ -63,5 +63,31 @@ function create(){
 
 
 function update(){
-
+   //make the player sprite and enemy sprite collide with platform
+   game.physics.arcade.collide(player, platform);
+   game.physics.arcade.collide(baddie1, platform);
+   // player speed reset to 0
+   player.body.velocity.x = 0;
+   //keyboard events
+   if (cursors.left.isDown){
+     player.body.velocity = -150;
+     player.animations.play("left");
+   } else if (cursors.right.isDown){
+     player.body.velocity = 150
+     player.animations.play("right");
+   } else {
+     player.animations.stop();
+     player.frame = 4;
+   }
+   // allow player to jump
+   if (cursors.up.isDown && player.body.touching.down) {
+     player.body.velocity.y = -300
+   }
+   //Enemy AI
+   if (baddie1.x > 749) {
+     baddie1.animations.play("left");
+     baddie1.body.velocity.x = -165
+   } else if (baddie1.x < 405) {
+     baddie.animation.velocity.x = 165;
+   }
 }
