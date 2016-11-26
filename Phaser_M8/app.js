@@ -35,7 +35,7 @@ function create(){
     ledge.body.immovable = true;
 
     //Player
-    var player = game.add.sprite(32, game.world.height - 150, "dude");
+    player = game.add.sprite(32, game.world.height - 150, "dude");
     // animate sprite
     player.animation.add("left", [0,1,2,3], 10, true);
     player.animation.add("right", [5,6,7,8], 10, true);
