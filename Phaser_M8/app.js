@@ -64,8 +64,8 @@ function create(){
 
 function update(){
    //make the player sprite and enemy sprite collide with platform
-   game.physics.arcade.collide(player, platform);
-   game.physics.arcade.collide(baddie1, platform);
+   game.physics.arcade.collide(player, platforms);
+   game.physics.arcade.collide(baddie1, platforms);
    // player speed reset to 0
    player.body.velocity.x = 0;
    //keyboard events
