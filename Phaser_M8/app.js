@@ -83,7 +83,7 @@ function create(){
 
   // create stars
   star = game.add.physicsGroup();
-  stars.enableBody = true;
+  stars = enableBody = true;
   // loop stars 12 times
   for (var i  = 0; i < 12; i++) {
     var star = stars.create(i * 70, 0,"star")
