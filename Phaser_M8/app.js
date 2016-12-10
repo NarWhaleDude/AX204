@@ -46,7 +46,7 @@ function create(){
     player.body.collideWorldBounds = true;
 
     //enemy
-  var baddie1 = game.add.sprite(750, 20, "baddie");
+  baddie1 = game.add.sprite(750, 20, "baddie");
   //animate  the sprite
   baddie1.animations.add("left", [0,1], 10, true);
   baddie1.animations.add("right", [2,3], 10, true);
@@ -57,7 +57,7 @@ function create(){
   baddie1.body.collideWorldBounds = true;
 
     //enemy2
-    var baddie2 = game.add.sprite(10, 20, "baddie");
+  baddie2 = game.add.sprite(10, 20, "baddie");
   //animate  the sprite
   baddie2.animations.add("left", [0,1], 10, true);
   baddie2.animations.add("right", [2,3], 10, true);
@@ -68,7 +68,7 @@ function create(){
   baddie2.body.collideWorldBounds = true;
 
      //enemy3
-    var baddie3 = game.add.sprite(200, 20, "baddie");
+  baddie3 = game.add.sprite(200, 20, "baddie");
   //animate  the sprite
   baddie3.animations.add("left", [0,1], 10, true);
   baddie3.animations.add("right", [2,3], 10, true);
