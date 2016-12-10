@@ -139,7 +139,8 @@ function update(){
      baddie3.animations.play("left");
      baddie3.body.velocity.x = -220
    } else if (baddie3.x < 405) {
-     baddie3.animation.velocity.x = 220;
+     baddie3.animations.play("right");
+     baddie3.body.velocity.x = 220;
    }
 
     //  More collisions
