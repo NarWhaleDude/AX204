@@ -86,7 +86,7 @@ function create(){
   stars = enableBody = true;
   // loop stars 12 times
   for (var i  = 0; i < 12; i++) {
-    var star = stars.create(i * 70, 0,"star")
+    var star = stars.create(i * 70, 0,"star");
     star.body.gravity.y = 200;
     star.body.bounce.y = Math.random() * 0.9;
   }
