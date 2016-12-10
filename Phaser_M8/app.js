@@ -105,10 +105,10 @@ function update(){
    player.body.velocity.x = 0;
    //keyboard events
    if (cursors.left.isDown){
-     player.body.velocity = -150;
+     player.body.velocity.x = -150;
      player.animations.play("left");
    } else if (cursors.right.isDown){
-     player.body.velocity = 150
+     player.body.velocity.x = 150
      player.animations.play("right");
    } else {
      player.animations.stop();
@@ -138,7 +138,7 @@ function update(){
    if (baddie3.x > 749) {
      baddie3.animations.play("left");
      baddie3.body.velocity.x = -220
-   } else if (baddie3.x < 405) {
+   } else if (baddie3.x < 300) {
      baddie3.animations.play("right");
      baddie3.body.velocity.x = 220;
    }
