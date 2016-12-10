@@ -129,10 +129,10 @@ function update(){
 
    if (baddie2.x > 200) {
      baddie2.animations.play("left");
-     baddie2.body.velocity.x = -280
+     baddie2.body.velocity.x = -400
    } else if (baddie2.x < 20) {
      baddie2.animations.play("right");
-     baddie2.body.velocity.x = 280;
+     baddie2.body.velocity.x = 400;
    }
 
    if (baddie3.x > 749) {
