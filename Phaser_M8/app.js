@@ -123,14 +123,16 @@ function update(){
      baddie1.animations.play("left");
      baddie1.body.velocity.x = -165
    } else if (baddie1.x < 405) {
-     baddie.animation.velocity.x = 165;
+     baddie1.animations.play("right");
+     baddie1.body.velocity.x = 165;
    }
 
    if (baddie2.x > 200) {
      baddie2.animations.play("left");
      baddie2.body.velocity.x = -80
    } else if (baddie2.x < 20) {
-     baddie2.animations.velocity.x = 80;
+     baddie2.animations.play("right");
+     baddie2.body.velocity.x = 80;
    }
 
    if (baddie3.x > 749) {
