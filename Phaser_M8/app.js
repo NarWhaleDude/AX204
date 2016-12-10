@@ -1,3 +1,4 @@
+
 console.log("TRUMP");
 
 // Declare the variables
@@ -129,7 +130,7 @@ function update(){
      baddie2.animations.play("left");
      baddie2.body.velocity.x = -80
    } else if (baddie2.x < 20) {
-     baddie2.animation.velocity.x = 80;
+     baddie2.animations.velocity.x = 80;
    }
 
    if (baddie3.x > 749) {
